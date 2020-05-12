@@ -8,12 +8,16 @@ app = Flask(__name__)
 
 #static route
 @app.route("/")
-def hello():
-    return render_template("index.html")
+def home():
+    return render_template("home.html")
 
-@app.route("/1006")
-def test():
-    return render_template("htmltest.html")
+@app.route("/tea")
+def tea():
+    return render_template("tea.html")
+
+@app.route("/travel")
+def travel():
+    return render_template("travel.html")
  
 
 #start the server
